@@ -52,7 +52,6 @@ html{
 
 .center{
   width: 90%;
-  max-width: 1200px;
   margin: auto;
 }
 
@@ -60,6 +59,7 @@ html{
 
 header{
   font-family: "Quicksand", serif;
+  width: 100%;
 }
 
 /* Navbar Styling */
@@ -188,6 +188,7 @@ hr{
 .banner-text p{
   font-size: 1.25rem;
   text-align: left;
+  width: 100%;
 }
 .banner-text > div{
   width: 100%;
@@ -387,7 +388,7 @@ section > h2{
   margin-bottom: 5rem;
 }
 
-.story-card-h,
+.story-card-hide,
 .story-card{
   box-shadow: 0px 0px 1.75rem 1px rgba(0, 0, 0, 0.05);
   border-radius: 1rem;
@@ -522,6 +523,15 @@ section > h2{
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 2.5rem;
+  }
+  .story-btn{
+    padding: 0.5rem;
+    font-size: 0.5rem;
+    bottom: 1rem;
+  }
+  .story-card > h4{
+    font-size: 1rem;
+    padding: 0 0.5rem;
   }
 }
 
