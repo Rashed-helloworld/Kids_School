@@ -367,3 +367,164 @@ hr{
     display: none;
   }
 }
+
+header,
+.curriculum{
+  display: none;
+}
+
+/* Story section styling */
+
+.stories{
+  display: grid;
+  grid-template-columns: 40% calc(30% - 1rem) calc(30% - 1rem);
+  grid-template-rows: repeat(2, 300px);
+  grid-gap: 1rem;
+}
+
+section > h2{
+  font-size: 2.8rem;
+  font-weight: 700;
+  font-family: "Quicksand", serif;
+  text-align: center;
+  margin-top: 3.8rem;
+  margin-bottom: 5rem;
+}
+
+.story-card-h,
+.story-card{
+  box-shadow: 0px 0px 1.75rem 1px rgba(0, 0, 0, 0.05);
+  border-radius: 1rem;
+}
+
+.box1{
+  grid-area: 1 / 1 / 3 / 2;
+}
+
+.box2{
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.box3{
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.box4{
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.box5{
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+.box1 img{
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.box1-btn{
+  background-color: var(--orange);
+  color: var(--white);
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  position: relative;
+  left: 1rem;
+  bottom: 2rem;
+}
+
+.box1-text{
+  padding: 2rem;
+}
+
+.box1-text > h4{
+  font-family: "Quicksand", serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.box1-text > p{
+  font-family: "Raleway", serif;
+  color: #666;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 1.5rem;
+}
+
+.story-card > img{
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.story-btn{
+  padding: 8px 16px;
+  border: none;
+  border-radius: 2rem;
+  color: var(--white);
+  font-weight: 600;
+  position: relative;
+  left: 1.2rem;
+  bottom: 1.65rem;
+}
+
+.btn-2{
+  background-color: var(--dodger-blue);
+}
+
+.btn-3{
+  background-color: var(--indigo);
+}
+
+.btn-4{
+  background-color: var(--orange);
+}
+
+.btn-5{
+  background-color: var(--brown);
+}
+
+.view-btn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 5rem auto 3.75rem;
+}
+
+.view-btn > button{
+  padding: 1rem;
+  background-color: var(--black);
+  border: none;
+  border-radius: 0.75rem;
+  color: var(--white);
+  font-style: 1rem;
+}
+
+.view-btn > button:hover{
+  background-color: var(--orange);
+}
+
+/* Story section Media Query */
+
+@media screen and (max-width: 576px) {
+  .box1{
+    display: none;
+  }
+  .stories{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .story-card{
+    width: 45%;
+  }
+  section > h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+  }
+}
