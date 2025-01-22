@@ -224,15 +224,12 @@ hr{
   }
 }
 
-header{
-  display: none;
-}
-
 /* Curriculum Section Styling */
 
 .curriculum{
   padding: 4rem 0;
   font-family: "Quicksand", serif;
+  margin-top: 5rem;
 }
 
 .curriculum > h2{
@@ -342,6 +339,9 @@ header{
 /* Curriculum Media Query */
 
 @media screen and (max-width: 576px) {
+  .curriculum{
+    margin-top: 3rem;
+  }
   .curriculum-cards{
     flex-direction: column;
   }
