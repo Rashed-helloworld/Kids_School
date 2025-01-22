@@ -190,12 +190,14 @@ hr{
   text-align: left;
   width: 100%;
 }
+
 .banner-text > div{
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .banner-btn{
   background-color: var(--black);
 }
@@ -287,7 +289,7 @@ hr{
   text-decoration: none;
   font-weight: 600;
   position: absolute;
-  bottom: 3.5rem;
+  bottom: 2.5rem;
   left: 35%;
 }
 
@@ -336,6 +338,7 @@ hr{
   font-size: 1.4rem;
   color: var(--white);
 }
+
 
 /* Curriculum Media Query */
 
