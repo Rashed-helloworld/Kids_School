@@ -1,0 +1,151 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.quicksand-font {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.raleway-font {
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* root styles */
+
+:root{
+  --orange: #FEA301;
+  --brown: #a52a2a;
+  --dodger-blue: #1e90ff;
+  --indigo: #4b0082;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+/* Header and Main centered */
+
+.center{
+  max-width: 90%;
+  margin: auto;
+}
+
+/* Header Styling */
+
+header{
+  font-family: "Quicksand", serif;
+}
+
+/* Navbar Styling */
+
+.nav-items{
+  min-width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+
+.nav-item{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-item > h2{
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2rem;
+  margin-left: 0.75rem;
+}
+
+.nav-item > .links{
+  display: flex;
+  flex-direction: row;
+}
+
+.links > li{
+  list-style-type: none;
+}
+
+.links a{
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 2rem;
+  margin-right: 2rem;
+}
+
+.orange{
+  color: var(--orange);
+}
+
+.dodger-blue{
+  color: var(--dodger-blue);
+}
+
+.indigo{
+  color: var(--indigo);
+}
+
+.brown{
+  color: var(--brown);
+}
+
+.nav-btn{
+  background-color: var(--orange);
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 12px;
+  padding: 1rem 2.5rem;
+}
+
+.nav-item > .menu-icon{
+  display: none;
+}
+
+hr{
+  display: none;
+}
+
+/* Navbar Media Queries */
+
+@media screen and (max-width: 576px) {
+  .logo{
+    width: 46px;
+    height: 46px;
+  }
+  .nav-item > .links{
+    display: none;
+  }
+  .nav-item > h2{
+    display: none                                                                                                                           ;
+  }
+  .nav-item > .nav-btn{
+    display: none;
+  }
+  .nav-item > .menu-icon{
+    display: inline-block;
+  }
+  hr{
+    display: block;
+    background-color: var(--orange);
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+}
