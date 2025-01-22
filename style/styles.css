@@ -306,7 +306,7 @@ hr{
 
 .indicator{
   width: 100%;
-  margin: 4rem 0 7rem;
+  margin: 4rem 0;
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -368,10 +368,6 @@ hr{
   }
 }
 
-header,
-.curriculum{
-  display: none;
-}
 
 /* Story section styling */
 
